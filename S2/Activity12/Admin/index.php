@@ -1,5 +1,7 @@
 <?php
-include("DBConnection.php");
+include_once("../../DBConnection.php");
+include_once("AdminCheck.php");
+include_once("Nav.php");
 $first_name = $middle_name = $last_name = $gender = $prefix = $seven_digit = $email = "";
 
 if (isset($_POST["btnRegister"])) {
@@ -11,6 +13,7 @@ if (isset($_POST["btnRegister"])) {
   $seven_digit = $_POST["seven_digit"];
   $email = $_POST["email"];
 }
+
 ?>
 
 <form action="" method="post">
@@ -77,6 +80,6 @@ if ($first_name) {
   echo "Your Email is " . "<strong>$email</strong>" . "<br>";
   echo "Your Password is " . "<strong>$password</strong>" . "<br>";
 
-  mysqli_query($DB_CONNECTION, "INSERT INTO tbl_users(first_name, middle_name, last_name, gender, prefix, seven_digit, email, password) VALUES ('$first_name', '$middle_name', '$last_name', '$gender', '$prefix', '$seven_digit', '$email', '$password')");
+  mysqli_query($DB_CONNECTION, "INSERT INTO tbl_users(first_name, middle_name, last_name, gender, prefix, seven_digit, email, password, account_type) VALUES ('$first_name', '$middle_name', '$last_name', '$gender', '$prefix', '$seven_digit', '$email', '$password', '2')");
 }
 ?>

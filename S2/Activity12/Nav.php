@@ -1,11 +1,10 @@
 <?php
-include_once("../DBConnection.php");
+include("../DBConnection.php");
 ?>
 
 <center>
-  <a href="Me" class="btn-primary">My Account</a>
-  <a href="Favorites" class="btn-primary">My Favorites</a>
-  <a href="../Logout" class="btn-warning">Logout</a>
+  <a href="Index" class="btn-primary">Register</a>
+  <a href="Login" class="btn-primary">Login</a>
 </center>
 
 <style>
