@@ -1,12 +1,21 @@
+<?php
+include("../DBConnection.php");
+?>
+
 <center>
-  <a href="index" class="btn-primary">Main</a>
-  <a href="ViewRecord" class="btn-primary">View Records</a>
-  <a href="Settings" class="btn-primary">Send SMS</a>
-  <a href="Settings" class="btn-primary">Settings</a>
-  <a href="../Logout.php" class="btn-warning">Logout</a>
+  <a href="Index" class="btn-primary">Register</a>
+  <a href="Login" class="btn-primary">Login</a>
 </center>
 
 <style>
+  .input-text {
+    padding: 5px 30px 5px 0px;
+  }
+
+  input[type="submit"] {
+    padding: 5px 15px;
+  }
+
   .btn-primary {
     text-decoration: none;
     padding: 10px 20px;

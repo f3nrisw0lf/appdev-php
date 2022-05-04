@@ -1,3 +1,7 @@
+<?php
+include_once("../DBConnection.php");
+include_once("AdminCheck.php");
+?>
 <center>
   <a href="index" class="btn-primary">Main</a>
   <a href="ViewRecord" class="btn-primary">View Records</a>

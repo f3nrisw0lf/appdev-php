@@ -1,12 +1,18 @@
 <center>
-  <a href="index" class="btn-primary">Main</a>
-  <a href="ViewRecord" class="btn-primary">View Records</a>
-  <a href="Settings" class="btn-primary">Send SMS</a>
-  <a href="Settings" class="btn-primary">Settings</a>
-  <a href="../Logout.php" class="btn-warning">Logout</a>
+  <a href="Me" class="btn-primary">My Account</a>
+  <a href="MyFavorites" class="btn-primary">My Favorites</a>
+  <a href="../Logout" class="btn-warning">Logout</a>
 </center>
 
 <style>
+  .input-text {
+    padding: 5px 30px 5px 0px;
+  }
+
+  input[type="submit"] {
+    padding: 5px 15px;
+  }
+
   .btn-primary {
     text-decoration: none;
     padding: 10px 20px;
